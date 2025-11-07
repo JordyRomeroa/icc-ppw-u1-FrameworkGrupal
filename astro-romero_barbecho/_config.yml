@@ -1,0 +1,12 @@
+# Jekyll configuration: exclude project source files (Astro) so Jekyll
+# doesn't try to parse .astro frontmatter during GitHub Pages builds.
+exclude:
+  - "src"
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
+  - "pnpm-lock.yaml"
+  - "README.md"
+
+# If you later want Jekyll to process a specific directory, remove it from
+# the exclude list above.
