@@ -1,0 +1,15 @@
+# Repository-level Jekyll config to prevent Jekyll from parsing Astro source files
+# The GitHub Action runs at the repository root; placing this file here ensures
+# Jekyll will exclude the Astro project files and won't try to parse `.astro`
+# frontmatter.
+exclude:
+  - "**/*.astro"
+  - "astro-romero_barbecho/**"
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
+  - "pnpm-lock.yaml"
+  - "README.md"
+
+# If you later want Jekyll to process specific directories, remove them from
+# the exclude list above.
